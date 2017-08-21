@@ -1,0 +1,6 @@
+<launch>
+<node pkg="tf" type="static_transform_publisher" name="transform_change" args="0.673225 0.608171 -0.417954 -0.143564 0.989523 -0.00965426 -0.0118527 /base /new_test1 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="transform_change1" args="0.831884 -0.398903 -0.385667 -0.144145 0.989359 0.00119263 0.019744 /base /new_test2 100" />
+
+</launch>

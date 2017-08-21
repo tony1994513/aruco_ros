@@ -1,8 +1,9 @@
+<?xml version="1.0"?>
 <launch>
 
     <!-- arguments about camera and aruco -->
-    <arg name="camera" value="/cameras/head_camera"/>
-    <arg name="camera_frame"          default="head_camera"/>
+    <arg name="camera" value="/cameras/right_hand_camera"/>
+    <arg name="camera_frame"          default="right_hand_camera"/>
     <arg name="marker_frame"          default="aruco_marker_582_frame"/>
     <arg name="camera_info"           default="$(arg camera)/camera_info"/>
     <arg name="image"                 default="$(arg camera)/image"/>

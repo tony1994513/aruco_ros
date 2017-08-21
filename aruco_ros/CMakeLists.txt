@@ -36,6 +36,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(transform_test src/transform_test.cpp)
+add_dependencies(transform_test ${PROJECT_NAME}_gencfg)
+target_link_libraries(transform_test ${catkin_LIBRARIES})
 add_executable(single src/simple_single.cpp
                       src/aruco_ros_utils.cpp)
 add_dependencies(single ${PROJECT_NAME}_gencfg)
